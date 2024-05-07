@@ -4,6 +4,9 @@
 .settings/
 .metadata/
 
+# Resource Bundle
+resources/messages.properties
+
 # Compiled Java classes
 *.class
 

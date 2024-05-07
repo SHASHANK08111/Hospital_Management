@@ -1,4 +1,4 @@
-package com.virtusa.adminServlet;
+package com.virtusa.controller.userServlet;
 
 import java.io.IOException;
 
@@ -9,15 +9,15 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-@WebServlet("/admin-logout")
-public class AdminLogout extends HttpServlet {
+@WebServlet("/user-logout")
+public class UserLogout extends HttpServlet {
 
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		HttpSession session=req.getSession();
-		session.removeAttribute("adminObj");
-		session.setAttribute("errorMessage","Admin Logout Successfully");
-		resp.sendRedirect("admin-login.jsp");
+		session.removeAttribute("userObj");
+		session.setAttribute("errorMessage","User Logout Successfully");
+		resp.sendRedirect("index.jsp");
 	}
 
 	

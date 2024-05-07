@@ -1,4 +1,4 @@
-package com.virtusa.adminServlet;
+package com.virtusa.controller.adminServlet;
 
 import java.io.IOException;
 

@@ -1,7 +1,7 @@
-package com.virtusa.adminServlet;
+package com.virtusa.controller.adminServlet;
 
 import com.db.DBConnect;
-import java.sql.Date;
+
 import java.text.SimpleDateFormat;
 
 import com.virtusa.dao.DoctorDao;
