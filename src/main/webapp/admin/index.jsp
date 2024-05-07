@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
  pageEncoding="ISO-8859-1"%>
+ <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -36,6 +38,7 @@
       <div class="col-md-4">
         <div class="card paint-card">
           <div class="card-body text-center">
+            <a href="doctor.jsp">Click here</a>
             <i class="fa-solid fa-user-doctor fa-3x"></i><br>
             <p class="fs-4 text-center">
                DOCTOR<br>5
@@ -97,7 +100,7 @@
                 <label>Enter Specialist Name</label>
                 <input text="text" name = "specName" class="form-control"></input>
             </div>
-            <div class="texr-center mt-3">
+            <div class="text-center mt-3">
             <button type="submit" class="btn btn-primary">Add</button>
             </div>
 

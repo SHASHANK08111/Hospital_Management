@@ -9,11 +9,13 @@ public class DBConnect {
 	public static Connection getConnection() {
 		Connection con=null;
 			try {
-				//Class.forName("com.mysql.jdbc.Driver");
-				con=DriverManager.getConnection("jdbc:mysql://localhost:3306/MedManagement","root","0811");
+				Class.forName("com.mysql.jdbc.Driver");
+				con=DriverManager.getConnection("jdbc:mysql://localhost:3306/hospital","root","root");
 			} catch (SQLException e) {
 				e.printStackTrace();
-			}
-		return con;
+			} catch (ClassNotFoundException e) {
+                throw new RuntimeException(e);
+            }
+        return con;
 	}
 }

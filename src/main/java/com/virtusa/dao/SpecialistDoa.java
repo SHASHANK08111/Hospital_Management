@@ -19,7 +19,7 @@ public class SpecialistDoa {
     public boolean addSpecialist(String spec){
         boolean f = false;
         try{
-            String sql = "insert into specialist(spec_name) values(?)";
+            String sql = "insert into specialist(specialistName) values(?)";
             PreparedStatement ps = conn.prepareStatement(sql);
             ps.setString(1, spec);
 
@@ -38,7 +38,7 @@ public class SpecialistDoa {
         ArrayList<Specialist> list = new ArrayList<Specialist>();
         Specialist s = null;
         try{
-            String sql = "Select * from Specialist";
+            String sql = "Select * from specialist";
             PreparedStatement ps = conn.prepareStatement(sql);
             ResultSet rs = ps.executeQuery();
             while(rs.next()){

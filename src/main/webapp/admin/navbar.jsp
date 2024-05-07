@@ -11,7 +11,7 @@
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                      <li><a class="dropdown-item" href="user-login.jsp">User</a></li>
                      <li><a class="dropdown-item" href="index.jsp">Admin</a></li>
-                     <li><a class="dropdown-item" href="doctor-login.jsp">Doctor</a></li>
+                     <li><a class="dropdown-item" href="../doctor.jsp">Doctor</a></li>
             </ul>
 			<div class="dropdown">
 			  <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
