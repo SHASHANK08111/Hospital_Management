@@ -34,14 +34,16 @@
   <div class="container p-5">  
     <div class="row">
       <div class="col-md-4">
+      <a href="AddDoctor.jsp" class="car-link">
         <div class="card paint-card">
           <div class="card-body text-center">
-            <i class="fa-solid fa-user-doctor fa-3x"></i><br>
+            <i class="fa-solid fa-user-doctor fa-3x"></i><br></a>
             <p class="fs-4 text-center">
                DOCTOR<br>5
             <p>
           </div>
         </div>
+       </a> 
       </div>
       <div class="col-md-4">
         <div class="card paint-card">

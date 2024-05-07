@@ -34,9 +34,6 @@
               </div>
               <button type="submit" class="btn btn-primary btn-block">Login</button>
             </form>
-            <div class="text-center mt-3">
-              <p>New user? <a href="Register.jsp">Register here</a></p>
-            </div>
           </div>
         </div>
       </div>

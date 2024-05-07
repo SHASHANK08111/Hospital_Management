@@ -1,10 +1,13 @@
-com\db\DBConnect.class
 com\virtusa\dao\UserDao.class
 com\virtusa\userServlet\UserRegister.class
+com\virtusa\adminServlet\AddDoctor.class
 com\virtusa\entity\Specialist.class
+com\virtusa\entity\Doctor.class
+com\virtusa\adminServlet\AdminLogin.class
+com\virtusa\adminServlet\AdminLogout.class
+com\db\DBConnect.class
 com\virtusa\entity\User.class
 com\virtusa\adminServlet\AddSpecialist.class
 com\virtusa\userServlet\UserLogin.class
-com\virtusa\adminServlet\AdminLogin.class
 com\virtusa\dao\SpecialistDoa.class
-com\virtusa\adminServlet\AdminLogout.class
+com\virtusa\dao\DoctorDao.class
