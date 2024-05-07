@@ -4,7 +4,6 @@ com\virtusa\userServlet\UserRegister.class
 com\virtusa\entity\Specialist.class
 com\virtusa\entity\User.class
 com\virtusa\adminServlet\AddSpecialist.class
-com\virtusa\adminServlet\UserLogout.class
 com\virtusa\userServlet\UserLogin.class
 com\virtusa\adminServlet\AdminLogin.class
 com\virtusa\dao\SpecialistDoa.class
