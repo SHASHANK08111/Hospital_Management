@@ -36,24 +36,29 @@
   <div class="container p-5">  
     <div class="row">
       <div class="col-md-4">
+      <a href="AddDoctor.jsp" class="card-link">
         <div class="card paint-card">
           <div class="card-body text-center">
-            <a href="doctor.jsp">Click here</a>
-            <i class="fa-solid fa-user-doctor fa-3x"></i><br>
+
+            <i class="fa-solid fa-user-doctor fa-3x"></i><br></a>
+
             <p class="fs-4 text-center">
                DOCTOR<br>5
             <p>
           </div>
         </div>
+       </a> 
       </div>
       <div class="col-md-4">
         <div class="card paint-card">
+        <a href="UserDetails.jsp" class="card-link">
           <div class="card-body text-center">
             <i class="fa-solid fa-users fa-3x"></i><br>
             <p class="fs-4 text-center">
                 USER<br>12
             <p>
           </div>
+        </a>
         </div>
       </div>
       <div class="col-md-4">

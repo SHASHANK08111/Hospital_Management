@@ -1,9 +1,12 @@
 package com.virtusa.entity;
 
+
+import java.sql.Date;
+
 public class Doctor {
     private int id;
     private String fullname;
-    private String dob;
+    private Date dob;
     private String qualification;
     private String specialist;
     private String email;
@@ -15,7 +18,9 @@ public class Doctor {
         super();
     }
 
-    public Doctor(String fullname, String dob, String qualification, String specialist, String email, String mobNo, String password) {
+
+    public Doctor(String fullname, Date dob, String qualification, String specialist, String email, String mobNo, String password) {
+
         this.fullname = fullname;
         this.dob = dob;
         this.qualification = qualification;
@@ -41,11 +46,11 @@ public class Doctor {
         this.fullname = fullname;
     }
 
-    public String getDob() {
+    public Date getDob() {
         return dob;
     }
 
-    public void setDob(String dob) {
+    public void setDob(Date dob) {
         this.dob = dob;
     }
 
@@ -88,5 +93,6 @@ public class Doctor {
     public void setPassword(String password) {
         this.password = password;
     }
+
 }
 

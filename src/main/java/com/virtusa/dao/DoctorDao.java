@@ -1,11 +1,14 @@
 package com.virtusa.dao;
 
-import com.virtusa.entity.Doctor;
-
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.sql.Statement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
+
+import com.virtusa.entity.Doctor;
+
 
 public class DoctorDao {
     private Connection conn;
@@ -16,10 +19,10 @@ public class DoctorDao {
     public boolean registerDoctor(Doctor d){
         boolean f = false;
         try{
-            String sql = "insert into DoctorDetails(fullname, dob, qualification, specialist, email, mobNo, password) values(?,?,?,?,?,?,?)";
+            String sql = "insert into  DoctorDetails(fullname, dob, qualification, specialist, email, mobNo, password) values(?,?,?,?,?,?,?)";
             PreparedStatement ps = conn.prepareStatement(sql);
             ps.setString(1, d.getFullname());
-            ps.setString(2, d.getDob());
+            ps.setDate(2, d.getDob());
             ps.setString(3, d.getQualification());
             ps.setString(4, d.getSpecialist());
             ps.setString(5, d.getEmail());
@@ -40,7 +43,7 @@ public class DoctorDao {
         ArrayList<Doctor> docList = new ArrayList<>();
         Doctor d = null;
         try{
-            String sql = "select * from doctor order by id desc";
+            String sql = "select * from DoctorDetails order by id desc";
             PreparedStatement ps = conn.prepareStatement(sql);
 
             ResultSet rs = ps.executeQuery();
@@ -52,5 +55,27 @@ public class DoctorDao {
             e.printStackTrace();
         }
         return docList;
+
     }
+
+    //doctor login
+    public Doctor doctorLogin(String email, String password){
+        Doctor d = null;
+        try{
+            Statement st = conn.createStatement();
+            ResultSet rs = st.executeQuery("SELECT * FROM DoctorDetails WHERE email='" + email + "' AND password= '" + password + "'");
+            while(rs.next()) {
+                d = new Doctor();
+                d.setId(rs.getInt(1));
+                d.setFullname(rs.getString(2));
+                d.setEmail(rs.getString(3));
+                d.setPassword(rs.getString(4));
+                d.setMobNo(rs.getString(5));
+            }
+        }catch(SQLException e){
+                e.printStackTrace();
+        }
+        return d;
+    }
+
 }

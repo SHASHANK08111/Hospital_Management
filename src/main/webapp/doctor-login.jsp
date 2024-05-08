@@ -1,3 +1,7 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+ pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@page isELIgnored="false" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +14,7 @@
       background-color: #f7f7f7;
     }
     .login-container {
-      margin-top: 100px;
+      margin-top: 100px;,
     }
   </style>
 </head>
@@ -23,7 +27,11 @@
             <h3 class="text-center">Doctor Login</h3>
           </div>
           <div class="card-body">
-            <form action="doctor_login" method="post">
+            <c:if test="${not empty errorMessage}">
+          		<p class="text-center text-success fs-3">${errorMessage}</p>
+          		<c:remove var="errorMessage" scope="session"/>
+          	</c:if>
+            <form action="doctor-login" method="post">
               <div class="form-group">
                 <label for="email">Email:</label>
                 <input type="email" class="form-control" id="email" name="email" required>
@@ -34,9 +42,7 @@
               </div>
               <button type="submit" class="btn btn-primary btn-block">Login</button>
             </form>
-            <div class="text-center mt-3">
-              <p>New user? <a href="Register.jsp">Register here</a></p>
-            </div>
+
           </div>
         </div>
       </div>
