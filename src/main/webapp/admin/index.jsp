@@ -48,7 +48,7 @@
       <div class="col-md-4">
         <div class="card paint-card">
           <div class="card-body text-center">
-            <i class="fa-solid fa-users fa-3x"></i><br>
+            <a href="../UserServlet"><i class="fa-solid fa-users fa-3x"></i></a><br>
             <p class="fs-4 text-center">
                 USER<br>12
             <p>

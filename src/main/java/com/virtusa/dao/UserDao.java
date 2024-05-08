@@ -1,10 +1,8 @@
 package com.virtusa.dao;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.sql.ResultSet;
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 import com.virtusa.entity.User;
 
@@ -63,6 +61,28 @@ public class UserDao {
 		
 		return u;
 		
+	}
+
+	public List<User> getAllUsers() {
+		List<User> usersDetails = new ArrayList<>();
+			String sql = "SELECT * FROM users";
+			System.out.println(conn);
+			try (PreparedStatement stmt = conn.prepareStatement(sql)) {
+				try (ResultSet rs = stmt.executeQuery()) {
+					while (rs.next()) {
+						User user = new User();
+						user.setId(rs.getInt("id"));
+						user.setFirstName(rs.getString("first_name"));
+						user.setEmail(rs.getString("email"));
+						// Set other user attributes
+						usersDetails.add(user);
+					}
+				}
+			}
+		catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return usersDetails;
 	}
 
 }
