@@ -7,8 +7,8 @@ import java.sql.Statement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 
+import com.virtusa.entity.Appointment;
 import com.virtusa.entity.Doctor;
-
 
 public class DoctorDao {
     private Connection conn;
@@ -48,8 +48,16 @@ public class DoctorDao {
 
             ResultSet rs = ps.executeQuery();
             while(rs.next()){
-                d = new Doctor();
-                d.setId(rs.getInt(1));
+            	d = new Doctor();
+            	d.setId(rs.getInt(1));
+            	d.setFullname(rs.getString(2));
+            	d.setDob(rs.getDate(3));
+            	d.setQualification(rs.getString(4));
+            	d.setSpecialist(rs.getString(5));
+            	d.setEmail(rs.getString(6));
+            	d.setMobNo(rs.getString(7));
+            	d.setPassword(rs.getString(8));
+            	docList.add(d);
             }
         }catch (Exception e){
             e.printStackTrace();
@@ -77,5 +85,57 @@ public class DoctorDao {
         }
         return d;
     }
+
+    public ArrayList<Doctor> getAllDoctorsBySpecialistName(String specialist){
+    	 ArrayList<Doctor> docList = new ArrayList<>();
+         Doctor d = null;
+        try{
+            String sql = "Select * from DoctorDetails where  specialist=?";
+            PreparedStatement ps = conn.prepareStatement(sql);
+            ps.setString(1, specialist);
+            ResultSet rs = ps.executeQuery();
+            while(rs.next()){
+            	d = new Doctor();
+            	d.setId(rs.getInt(1));
+            	d.setFullname(rs.getString(2));
+            	d.setDob(rs.getDate(3));
+            	d.setQualification(rs.getString(4));
+            	d.setSpecialist(rs.getString(2));
+            	d.setEmail(rs.getString(2));
+            	d.setMobNo(rs.getString(2));
+            	d.setPassword(rs.getString(2));
+            	docList.add(d);
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        return docList;
+    }
+    
+    public Doctor getDoctorbyId(int id){
+        Doctor d = null;
+        try{
+            String sql = "select * from doctor where id=?";
+            PreparedStatement ps = conn.prepareStatement(sql);
+            ps.setInt(1, id);
+
+            ResultSet rs = ps.executeQuery();
+            while(rs.next()){
+            	d = new Doctor();
+            	d.setId(rs.getInt(1));
+            	d.setFullname(rs.getString(2));
+            	d.setDob(rs.getDate(3));
+            	d.setQualification(rs.getString(4));
+            	d.setSpecialist(rs.getString(5));
+            	d.setEmail(rs.getString(6));
+            	d.setMobNo(rs.getString(7));
+            	d.setPassword(rs.getString(8));
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    return d;
+    }
+
 
 }

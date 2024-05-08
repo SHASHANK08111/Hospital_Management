@@ -22,14 +22,14 @@
     <div class="container p-5">
         <div class="row">
           <div class="col-md-4">
-          <a href="TotalAppointment.jsp" class="card-link">
+          <a href="../pendingAppointment" class="card-link">
             <div class="card paint-card">
               <div class="card-body text-center">
 
                 <i class="fa-solid fa-user-doctor fa-3x"></i><br></a>
 
                 <p class="fs-4 text-center">
-                   TOTAL APPOINTMENT<br>5
+                   PENDING APPOINTMENT<br>5
                 <p>
               </div>
             </div>
@@ -41,7 +41,7 @@
               <div class="card-body text-center">
                 <a href="PendingAppointment.jsp" class="card-link"><i class="fa-solid fa-users fa-3x"></i></a><br>
                 <p class="fs-4 text-center">
-                    PENDING APPOINTMENT<br>12
+                   S APPOINTMENT<br>12
                 <p>
               </div>
 

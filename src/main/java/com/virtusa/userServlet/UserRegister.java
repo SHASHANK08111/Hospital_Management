@@ -32,13 +32,13 @@ public class UserRegister extends HttpServlet {
 		boolean f=userdao.userRegister(u);
 		
 		if(f) {
-			System.out.println("1");
+			//System.out.println("1");
 			session.setAttribute("successMessage","Register Successful" );
-			resp.sendRedirect("user-registration.jsp");
+			resp.sendRedirect("user-login.jsp");
 		}else {
 			session.setAttribute("errorMessage","Something Wrong in registration" );
 			resp.sendRedirect("user-registration.jsp");
-			System.out.println("1");
+			//System.out.println("2");
 		}
 
 	}

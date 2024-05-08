@@ -1,5 +1,6 @@
 com\virtusa\dao\UserDao.class
 com\virtusa\doctorServlet\DoctorLogin.class
+com\virtusa\userServlet\BookAppointment.class
 com\virtusa\userServlet\UserRegister.class
 com\virtusa\adminServlet\AddDoctor.class
 com\virtusa\entity\Specialist.class
@@ -9,7 +10,10 @@ com\virtusa\adminServlet\AdminLogin.class
 com\virtusa\adminServlet\AdminLogout.class
 com\db\DBConnect.class
 com\virtusa\entity\User.class
+com\virtusa\entity\Appointment.class
 com\virtusa\adminServlet\AddSpecialist.class
+com\virtusa\dao\AppointmentDao.class
+com\virtusa\doctorServlet\PendingAppointment.class
 com\virtusa\userServlet\UserLogin.class
 com\virtusa\dao\SpecialistDoa.class
 com\virtusa\dao\DoctorDao.class
