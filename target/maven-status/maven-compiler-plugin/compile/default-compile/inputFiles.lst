@@ -7,11 +7,14 @@ C:\Users\shashanksp\eclipse-workspace\FinalProject\src\main\java\com\virtusa\use
 C:\Users\shashanksp\eclipse-workspace\FinalProject\src\main\java\com\db\DBConnect.java
 C:\Users\shashanksp\eclipse-workspace\FinalProject\src\main\java\com\virtusa\userServlet\UserLogout.java
 C:\Users\shashanksp\eclipse-workspace\FinalProject\src\main\java\com\virtusa\userServlet\BookAppointment.java
+C:\Users\shashanksp\eclipse-workspace\FinalProject\src\main\java\com\virtusa\dao\slotDao.java
 C:\Users\shashanksp\eclipse-workspace\FinalProject\src\main\java\com\virtusa\entity\User.java
 C:\Users\shashanksp\eclipse-workspace\FinalProject\src\main\java\com\virtusa\entity\Appointment.java
 C:\Users\shashanksp\eclipse-workspace\FinalProject\src\main\java\com\virtusa\adminServlet\AddDoctor.java
 C:\Users\shashanksp\eclipse-workspace\FinalProject\src\main\java\com\virtusa\dao\UserDao.java
 C:\Users\shashanksp\eclipse-workspace\FinalProject\src\main\java\com\virtusa\entity\Doctor.java
 C:\Users\shashanksp\eclipse-workspace\FinalProject\src\main\java\com\virtusa\dao\AppointmentDao.java
+C:\Users\shashanksp\eclipse-workspace\FinalProject\src\main\java\com\virtusa\userServlet\saveAppointment.java
 C:\Users\shashanksp\eclipse-workspace\FinalProject\src\main\java\com\virtusa\dao\SpecialistDoa.java
 C:\Users\shashanksp\eclipse-workspace\FinalProject\src\main\java\com\virtusa\dao\DoctorDao.java
+C:\Users\shashanksp\eclipse-workspace\FinalProject\src\main\java\com\virtusa\entity\Slot.java

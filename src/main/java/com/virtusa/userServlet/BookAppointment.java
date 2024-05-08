@@ -46,7 +46,7 @@ public class BookAppointment extends HttpServlet {
 	        
             
             
-	        String slot = req.getParameter("slot");
+	        String slot = null;
 	        String specialistName = req.getParameter("specialist");
 	      
 		
@@ -60,18 +60,10 @@ public class BookAppointment extends HttpServlet {
 	        
 	        Appointment ap=new Appointment(userId,doctorId,username,age,disease,appointmentDate,slot,specialistName, doctorName,isApproved,
 			comment,status);
-	        AppointmentDao adao=new AppointmentDao(DBConnect.getConnection());
-	        boolean f=adao.saveAppointmentToDB(ap);
-	        if(f){
-                session.setAttribute("succMsg", "Appointment Added Successfully");
-                resp.sendRedirect("user/BookAppointment.jsp");
-            }
-            else{
-                session.setAttribute("errorMsg", "Something wrong in server");
-                resp.sendRedirect("user/BookAppointment.jsp");
-            }
-	        
-	        
+	       
+	        HttpSession AppointmentSession = req.getSession();
+	        AppointmentSession.setAttribute("appointmentObj",ap);
+	        resp.sendRedirect("user/checkAvailableSlot.jsp");
 		  } catch (Exception e){
 	            e.printStackTrace();
 	        }
