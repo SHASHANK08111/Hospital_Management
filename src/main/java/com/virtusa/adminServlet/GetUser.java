@@ -15,16 +15,12 @@ import javax.servlet.http.HttpServletResponse;
 
 @WebServlet("/UserServlet")
 public class GetUser extends HttpServlet {
-    private static final long serialVersionUID = 1L;
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         UserDao userDao = new UserDao(DBConnect.getConnection());
         List<User> users = userDao.getAllUsers();
         request.setAttribute("users", users);
-        System.out.print(users);
-
-
         // Construct the path to the JSP file located in the admin folder
 
         request.getRequestDispatcher("admin/UserDetails.jsp").forward(request, response);

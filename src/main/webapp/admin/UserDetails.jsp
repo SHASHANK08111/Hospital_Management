@@ -19,7 +19,7 @@
             th {
                 background-color: #f2f2f2;
             }
-        </style>
+    </style>
 </head>
 <body>
     <h1>All User Details</h1>
@@ -40,8 +40,8 @@
                     <td>${user.firstName}</td>
                     <td>${user.email}</td>
                     <td>
-                        <form action="appointmentDetails.jsp" method="GET"> <!-- Form to submit to appointmentDetails.jsp -->
-                            <input type="hidden" name="userId" value="${user.id}"> <!-- Pass user id to appointmentDetails.jsp -->
+                        <form action="ViewAppointmentsServlet" method="GET"> <!-- Form to submit to UserAppointmentDetails.jsp -->
+                            <input type="hidden" name="userId" value="${user.id}"> <!-- Pass user id to UserAppointmentDetails.jsp -->
                             <input type="submit" value="View"> <!-- View button to submit the form -->
                         </form>
                     </td>

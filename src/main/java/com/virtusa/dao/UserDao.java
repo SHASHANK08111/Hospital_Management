@@ -66,7 +66,6 @@ public class UserDao {
 	public List<User> getAllUsers() {
 		List<User> usersDetails = new ArrayList<>();
 			String sql = "SELECT * FROM users";
-			System.out.println(conn);
 			try (PreparedStatement stmt = conn.prepareStatement(sql)) {
 				try (ResultSet rs = stmt.executeQuery()) {
 					while (rs.next()) {
