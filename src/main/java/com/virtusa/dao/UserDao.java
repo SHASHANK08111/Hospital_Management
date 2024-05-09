@@ -73,7 +73,7 @@ public class UserDao {
 						user.setId(rs.getInt("id"));
 						user.setFirstName(rs.getString("first_name"));
 						user.setEmail(rs.getString("email"));
-						// Set other user attributes
+
 						usersDetails.add(user);
 					}
 				}

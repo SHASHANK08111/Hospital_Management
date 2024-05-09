@@ -46,7 +46,6 @@
                 <th>Slot</th>
                 <th>Doctor Name</th>
                 <th>Status</th>
-                <!-- Add more table headers for other appointment attributes -->
             </tr>
         </thead>
         <tbody>
@@ -58,7 +57,6 @@
                     <td><%= appointment.getSlot() %></td>
                     <td><%= appointment.getDoctorName() %></td>
                     <td><%= appointment.getStatus() %></td>
-                    <!-- Add more table cells for other appointment attributes -->
                 </tr>
             <% } %>
         </tbody>

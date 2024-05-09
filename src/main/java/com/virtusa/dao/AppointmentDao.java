@@ -66,8 +66,6 @@ public class AppointmentDao {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        System.out.println(appointments);
-        System.out.println("-----------");
         return appointments;
     }
 }

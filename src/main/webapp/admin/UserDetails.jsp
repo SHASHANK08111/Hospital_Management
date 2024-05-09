@@ -30,7 +30,7 @@
                 <th>ID</th>
                 <th>Name</th>
                 <th>Email</th>
-                <th>Actions</th> <!-- Add column for actions -->
+                <th>Actions</th>
             </tr>
         </thead>
         <tbody>

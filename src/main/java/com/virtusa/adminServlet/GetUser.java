@@ -21,7 +21,7 @@ public class GetUser extends HttpServlet {
         UserDao userDao = new UserDao(DBConnect.getConnection());
         List<User> users = userDao.getAllUsers();
         request.setAttribute("users", users);
-        // Construct the path to the JSP file located in the admin folder
+
 
         request.getRequestDispatcher("admin/UserDetails.jsp").forward(request, response);
     }
