@@ -6,8 +6,6 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
-
-import com.virtusa.entity.Appointment;
 import com.virtusa.entity.Doctor;
 
 public class DoctorDao {

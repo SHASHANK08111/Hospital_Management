@@ -39,9 +39,9 @@
             <div class="card paint-card">
 
               <div class="card-body text-center">
-                <a href="PendingAppointment.jsp" class="card-link"><i class="fa-solid fa-users fa-3x"></i></a><br>
+                <a href="PatientRecords.jsp" class="card-link"><i class="fa-solid fa-users fa-3x"></i></a><br>
                 <p class="fs-4 text-center">
-                   S APPOINTMENT<br>12
+                   PATIENT RECORDS<br>12
                 <p>
               </div>
 
