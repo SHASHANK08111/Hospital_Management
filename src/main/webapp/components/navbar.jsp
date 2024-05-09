@@ -27,7 +27,7 @@
                   <a class="nav-link" aria-current="page" href="#">Find Doctor</a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link" href="#">Book Appointment</a>
+                  <a class="nav-link" href="user/BookAppointment.jsp">Book Appointment</a>
                </li>
                <li class="nav-item">
                   <a class="nav-link" href="#">Medicines</a>

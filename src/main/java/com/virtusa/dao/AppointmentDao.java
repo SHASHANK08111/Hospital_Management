@@ -47,6 +47,7 @@ public class AppointmentDao {
 		return f;
 	}
 
+
 	public ArrayList<Appointment> appointmentsToAttend(){
 		ArrayList<Appointment> appointmentList = new ArrayList<Appointment>();
 		Appointment appointment = null;
@@ -78,4 +79,5 @@ public class AppointmentDao {
 		}
 		return appointmentList;
 	}
+
 }
