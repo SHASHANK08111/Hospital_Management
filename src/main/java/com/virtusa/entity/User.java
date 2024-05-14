@@ -7,20 +7,23 @@ public class User {
 	    private String email;
 	    private String password;
 	    private String phoneNumber;
+		private String role;
 	    
 	    
 		public User() {
 			super();
-		}
 
-		public User(String firstName, String lastName, String email, String password, String phoneNumber) {
+        }
+
+		public User(String firstName, String lastName, String email, String password, String phoneNumber, String role) {
 			super();
 			this.firstName = firstName;
 			this.lastName = lastName;
 			this.email = email;
 			this.password = password;
 			this.phoneNumber = phoneNumber;
-		}
+            this.role = role;
+        }
 		
 		public int getId() {
 			return id;
@@ -58,7 +61,11 @@ public class User {
 		public void setPhoneNumber(String phoneNumber) {
 			this.phoneNumber = phoneNumber;
 		}
-	    
-	    
+		public String getRole() {
+			return role;
+		}
 
+	public void setRole(String role) {
+		this.role = role;
+	}
 }

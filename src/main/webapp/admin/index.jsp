@@ -18,9 +18,9 @@
 <body>
   <%@include file="navbar.jsp"%> 
      
-  <c:if test="${empty adminObj}">
+ <%-- <c:if test="${empty adminObj}">
     <c:redirect url="../admin-login.jsp"></c:redirect>
-  </c:if>
+  </c:if> --%>
   
    <c:if test="${not empty successMessage}">
       <p class="text-center text-success fs-3">${successMessage}</p>

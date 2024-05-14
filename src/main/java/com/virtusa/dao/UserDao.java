@@ -53,11 +53,13 @@ public class UserDao {
 				u.setEmail(rs.getString(4));
 				u.setPassword(rs.getString(5));
 				u.setPhoneNumber(rs.getString(6));
+				u.setRole(rs.getString(7));
 			}
 		} catch (SQLException e) {
 		
 			e.printStackTrace();
 		}
+		System.out.print(u.getRole());
 		
 		return u;
 		

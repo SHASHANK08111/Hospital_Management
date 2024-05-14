@@ -24,10 +24,20 @@ public class UserLogin extends HttpServlet{
 			
 			
 			User u=userdao.userLogin(email, password);
+
+			User obj=new User();
+			String role=u.getRole();
+			System.out.println(role);
 			
 			if(u!=null) {
-				session.setAttribute("userObj", u);
-				resp.sendRedirect("user/index.jsp");
+				if (role.equals("Admin")){
+					session.setAttribute("userObj", u);
+					resp.sendRedirect("admin/index.jsp");
+				}else {
+					session.setAttribute("userObj", u);
+					resp.sendRedirect("user/index.jsp");
+				}
+
 			}else {
 				session.setAttribute("errorMessage", "Invalid username or password");
 				resp.sendRedirect("user-login.jsp");
