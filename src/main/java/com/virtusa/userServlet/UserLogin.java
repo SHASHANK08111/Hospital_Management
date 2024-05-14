@@ -27,7 +27,6 @@ public class UserLogin extends HttpServlet{
 
 			User obj=new User();
 			String role=u.getRole();
-			System.out.println(role);
 			
 			if(u!=null) {
 				if (role.equals("Admin")){

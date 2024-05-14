@@ -11,9 +11,9 @@ public class DBConnect {
 		Connection con=null;
 			try {
 				ResourceBundle message = ResourceBundle.getBundle("messages");
-				System.out.println(message.getString("SQL_URL"));
-				System.out.println(message.getString("SQL_USER"));
-				System.out.println(message.getString("SQL_PASSWORD"));
+//				System.out.println(message.getString("SQL_URL"));
+//				System.out.println(message.getString("SQL_USER"));
+//				System.out.println(message.getString("SQL_PASSWORD"));
 
 				con=DriverManager.getConnection(message.getString("SQL_URL"),message.getString("SQL_USER"),message.getString("SQL_PASSWORD"));
 			} catch (SQLException e) {

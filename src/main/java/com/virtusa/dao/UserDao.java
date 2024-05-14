@@ -59,7 +59,6 @@ public class UserDao {
 		
 			e.printStackTrace();
 		}
-		System.out.print(u.getRole());
 		
 		return u;
 		
