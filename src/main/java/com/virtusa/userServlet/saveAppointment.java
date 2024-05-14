@@ -1,7 +1,6 @@
 package com.virtusa.userServlet;
 
 import java.io.IOException;
-import java.text.SimpleDateFormat;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -12,10 +11,7 @@ import javax.servlet.http.HttpSession;
 
 import com.db.DBConnect;
 import com.virtusa.dao.AppointmentDao;
-import com.virtusa.dao.DoctorDao;
 import com.virtusa.entity.Appointment;
-import com.virtusa.entity.Doctor;
-import com.virtusa.entity.User;
 
 @WebServlet("/saveAppointment")
 public class saveAppointment extends HttpServlet{

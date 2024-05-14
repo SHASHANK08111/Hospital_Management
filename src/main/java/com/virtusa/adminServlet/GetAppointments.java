@@ -1,5 +1,6 @@
 package com.virtusa.adminServlet;
 
+
 import com.db.DBConnect;
 import com.virtusa.dao.AppointmentDao;
 import com.virtusa.entity.Appointment;
@@ -12,8 +13,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/ViewAppointmentsServlet")
-public class GetAppointment extends HttpServlet {
+@WebServlet("/ViewAppointments")
+public class GetAppointments extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String userId = request.getParameter("userId");
         AppointmentDao dao = new AppointmentDao(DBConnect.getConnection());
@@ -22,4 +23,5 @@ public class GetAppointment extends HttpServlet {
         request.getRequestDispatcher("admin/UserAppointment.jsp").forward(request, response);
     }
 }
+
 

@@ -38,7 +38,7 @@
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                      <li><a class="dropdown-item" href="user-login.jsp">User</a></li>
-                     <li><a class="dropdown-item" href="admin-login.jsp">Admin</a></li>
+                     <%--  <li><a class="dropdown-item" href="admin-login.jsp">Admin</a></li> --%>
                      <li><a class="dropdown-item" href="doctor-login.jsp">Doctor</a></li>
                   </ul>
                </li>

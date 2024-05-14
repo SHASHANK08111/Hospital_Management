@@ -1,7 +1,6 @@
 package com.virtusa.userServlet;
 
 import java.io.IOException;
-import java.sql.Date;
 import java.text.SimpleDateFormat;
 
 import javax.servlet.ServletException;
@@ -12,7 +11,6 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import com.db.DBConnect;
-import com.virtusa.dao.AppointmentDao;
 import com.virtusa.dao.DoctorDao;
 import com.virtusa.entity.Appointment;
 import com.virtusa.entity.Doctor;
